@@ -1,0 +1,165 @@
+import React from "react";
+import Card from './Card.jsx';
+import HeroSection from './herosec.jsx';
+import Navbar from './navbar.jsx';
+
+
+import "./assets/vendor/bootstrap/css/bootstrap.min.css";
+import "./assets/vendor/icofont/icofont.min.css";
+import "./assets/vendor/boxicons/css/boxicons.min.css";
+import "./assets/vendor/animate.css/animate.min.css";
+import "./assets/vendor/remixicon/remixicon.css";
+import "./assets/vendor/line-awesome/css/line-awesome.min.css";
+import "./assets/vendor/venobox/venobox.css";
+import "./assets/vendor/owl.carousel/assets/owl.carousel.min.css";
+import "./assets/vendor/aos/aos.css";
+import "./assets/css/style.css";
+
+const centeredStyle = {
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'center',
+  alignItems: 'center',
+  gap: '20px',
+  marginTop: '20px', 
+  height: '100vh'
+
+};
+
+// function App() {
+//   return (
+//     <div>
+//       <Navbar />
+      // <HeroSection />
+      // <div style={centeredStyle}>
+      //   <Card>
+      //     <h2>January</h2>
+      //     <p>Info for January will come here</p>
+      //   </Card>
+      //   <Card>
+      //     <h2>February</h2>
+      //     <p>Info for February will come here</p>
+      //   </Card>
+      //   <Card>
+      //     <h2>March</h2>
+      //     <p>Info for March will come here</p>
+      //   </Card>
+      //   <Card>
+      //     <h2>April</h2>
+      //     <p>Info for April will come here</p>
+      //   </Card>
+      // </div>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
+function Almanac() {
+  return (
+    <div>
+      {/* Header */}
+      <header id="header" className="fixed-top d-flex align-items-center header-transparent">
+        <div className="container d-flex align-items-center">
+          <div className="logo mr-auto">
+            <a href="index.html">
+              <img src="assets/img/Antariksh_logo.png" alt="Antariksh Logo" className="img-fluid" />
+            </a>
+          </div>
+          <nav className="nav-menu d-none d-lg-block">
+            <ul>
+              <li className="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li className="drop-down">
+                <a href="#">Month</a>
+                <ul>
+                  <li><a href="#">January</a></li>
+                  <li><a href="#">February</a></li>
+                  <li><a href="#">March</a></li>
+                  <li><a href="#">April</a></li>
+                </ul>
+              </li>
+              <li className="join-active">
+                <a href="https://forms.gle/wBFayZQMafPzJeuq8">Join Antariks</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <section id="hero">
+        <div className="hero-container">
+          <Navbar />
+          <h1>Antariksh</h1>
+          <h2>Astronomy Club of Vishwakarma Institutes</h2>
+          <a href="#about" className="btn-scroll scrollto" title="Scroll Down">
+            <i className="bx bx-chevron-down"></i>
+          </a>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <main id="main">
+        {/* About Section */}
+        <section id="about" className="about">
+          <div className="container">
+            <div className="section-title">
+              <h2>About</h2>
+              <p>
+                Antariksh Club, also known as Antariksh Astronomy Club, is an inter-institutional club operating
+                under the umbrella of Vishwakarma Institutes...
+              </p>
+            </div>
+            <div>
+              <div style={centeredStyle}>
+                <Card>
+                  <h2>January</h2>
+                  <p>Info for January will come here</p>
+                </Card>
+              <Card>
+                <h2>February</h2>
+                <p>Info for February will come here</p>
+              </Card>
+              <Card>
+                <h2>March</h2>
+                <p>Info for March will come here</p>
+              </Card>
+              <Card>
+                <h2>April</h2>
+                <p>Info for April will come here</p>
+              </Card>
+            </div>
+
+            {/* Other content goes here */}
+          </div>
+          </div>
+        </section>
+      </main>
+
+      {/* Footer */}
+      <footer id="footer">
+        <div className="container">
+          <h3>Antariksh</h3>
+          <p>Astronomy Club of Vishwakarma Institutes</p>
+          <div className="social-links">
+            <a href="#" className="youtube"><i className="bx bxl-youtube"></i></a>
+            <a href="#" className="facebook"><i className="bx bxl-facebook"></i></a>
+            <a href="#" className="instagram"><i className="bx bxl-instagram"></i></a>
+            <a href="#" className="twitter"><i className="bx bxl-twitter"></i></a>
+            <a href="#" className="google-plus"><i className="bx bxl-google-plus"></i></a>
+            <a href="#" className="linkedin"><i className="bx bxl-linkedin"></i></a>
+          </div>
+          <div className="copyright">
+            &copy; Copyright <strong><span>Antariksh Astronomy Club</span></strong>. All Rights Reserved
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+export default Almanac;
