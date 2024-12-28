@@ -35,13 +35,13 @@ const centeredStyle = {
 
 
 
-function February() {
+function june() {
     return (
         <div>
           <Navbar />
           <section id="hero">
             <div className="hero-container" style={centeredStyle}>
-              <h1>February</h1>
+              <h1>Solaris June</h1>
             </div>
           </section>
           <main id="main">
@@ -51,7 +51,8 @@ function February() {
                   
                   <p>
                     <br />
-                    From greeting the year with a launch to sending January off with beautiful celestial showers and passes, this month truly was a cosmic beginning of 2024. 
+                   in progress
+
                   </p>
                   <br />
                 </div>
@@ -68,29 +69,41 @@ function February() {
     );
   }
 
-export default February;
+export default june;
   
 
 
 const events = [
   {
-    title: "XPoSAT, launched by ISRO",
-    date: "01 January 2024",
-    description: "On January 1st, 2024, PSLV-C58, in its 60th flight, successfully launched its first polarimetry mission, the XPoSAT, to study the polarisation of X-rays. The spacecraft carried two scientific payloads developed by the Raman Research Institute and ISRO. The primary payload POLIX is an X-ray polarimeter for astronomical observations in the 8-30 keV energy bands. It is the first payload in the medium X-ray energy band dedicated to polarimetry measurements. XSPECT is an X-ray spectroscopy and timing payload, which can provide fast timing and good spectroscopic resolution in soft X-rays. The lifespan of the mission is expected to be at least five years. The observatory was placed in a low Earth orbit of 500-700 km..",
-    image: "https://via.placeholder.com/300",
+    title: "Parade of Planets!",
+    date: "3 June 2024",
+    description: "On June 3, 2024, there was a spectacular celestial event when six planets aligned in the pre-dawn sky: Mercury, Mars, Jupiter, Saturn, Uranus, and Neptune. Such an alignment is sometimes referred to as a 'planet parade' To an observer on Earth, alignments occur when multiple planets appear close together along the ecliptic plane. Yet, because of their distance from the Sun and the difference in brightness, not all these planets could be seen with the naked eye. Observers in the Northern Hemisphere who ventured out before sunrise could spot Mars and Saturn without optical aids, as they shone brightly enough to pierce through the morning twilight. Mercury and Jupiter were positioned low on the east-northeast horizon, their visibility hindered by the Sun's glare, making them challenging to observe without binoculars or a telescope. Uranus and Neptune are much fainter and more distant, and needed telescopic help and the darkest of skies to be observed. This alignment, though very captivating, reminded us of how our solar system's planetary positions are in a state of constant change.",
+    image: "https://www.astronomy.com/wp-content/uploads/sites/2/2024/05/June3-20minsbeforesunrise-lookingeast.png",
   },
   {
-    title: "Event Two",
-    date: " ",
-    description: "This is the description for event two. It has text on the right and an image on the left.",
-    image: "https://via.placeholder.com/300",
+    title: "June Solistice",
+    date: "21 June 2024",
+    description: "The spot on Earth directly under the Sun throughout the year is known as the subsolar point. This spot moves up and down along a north-south line throughout the year. It reaches its southernmost position on the December solstice and then begins to move northward. On the March equinox, it crosses the equator and continues north until it reaches its northernmost position on the June solstice. Then it reverses its direction and heads south. The term ‘solstice’ is derived from Latin, which uses the words sol for Sun and sistere to describe the act of standing still, describing how the Sun seems to stand still before reversing direction. With spring coming into summer, the Sun rises farther north and sets farther south with each passing day. By the solstice, it is at its highest point in the sky before starting again its slow journey southward.",
+    image: "https://c.tadst.com/gfx/900x506/equinoxes-and-solstice.png?1",
   },
   {
-    title: "Event Three",
-    date: " ",
-    description: "This is the description for event three. It has text on the left and an image on the right.",
-    image: "https://via.placeholder.com/300",
+    title: "Sun unleashes 2 powerful X-class solar flares in 12 hours",
+    date: "31 May - 1 June 2024",
+    description: "Highly active AR3664 sunspot region released powerful solar flares recently, including two major X-class flares within under 12 hours. May 31 at 6:03 p.m. EDT was the first X-class flare, while on June 1 at 4:48 a.m. EDT was the other. X-class is actually the strongest type of flare, and these two events measured X1.18 and X1.43 intensity. These flares happen due to magnetic reconnection, where the twisted magnetic field lines of the sun's plasma break and release tremendous energy. This causes explosions on the surface of the sun. These eruptions threw heavy radiation bursts towards Earth that caused radio blackouts in the affected areas. The first blackout hit the Western U.S. and the Pacific, while the second affected Europe, Africa, and Asia. The radiation ionized the upper atmosphere, thus making it denser. Such an environment interfered with high-frequency radio waves, which made it harder for radio signals to travel over long distances. These then weaken or fail entirely. Such blackouts are quite common during intense solar activity.",
+    image: "https://cdn.mos.cms.futurecdn.net/89ua9VkK9Q9Bj2ompBxdp3-1200-80.jpg",
   },
+  {
+    title: "India's Pushpak Achieves Autonomous Landing Milestone",
+    date: "23 June 2024",
+    description: "India has just completed a series of experiments to exhibit its own self-made homegrown technology, wherein its reusable space plane is named Pushpak. The last test carried out on June 23, 2024 in Karnataka, proved a challenging experience where Pushpak did its precise horizontal landing under stringent conditions of landing. This marked a move for India in its ultimate target of achieving the reusable launch vehicle by the end of this decade. Such technology will make future space missions cheaper by allowing rockets to be reused. The test was led by the Vikram Sarabhai Space Centre (VSSC) and involved releasing the 21-foot-long space plane from a Chinook helicopter at an altitude of 2.8 miles (4.5 km). Pushpak was intentionally released off-center from the runway to test its autonomous landing capabilities. The vehicle did maneuver itself, and in spite of very strong winds, landed accurately at the center of the runway. ISRO is working on taking this technology a little further ahead by sending the prototype into space for returns under autonomous control.",
+    image: "https://cdn.mos.cms.futurecdn.net/ACASaTCVr957GFdrHCvLgg-1200-80.jpg",
+  },
+//   {
+//     title: "Soyuz-2.1a Launch",
+//     date: "29th March 2024",
+//     description: "On March 29, 2024, Russia launched a Soyuz-2.1a rocket from Baikonur Cosmodrome, carrying several satellites into orbit as part of ongoing missions aimed at enhancing communications and Earth observation capabilities. The launch occurred at approximately 11:00 AM local time and successfully deployed multiple payloads into their designated orbits.",
+//     image: "https://pbs.twimg.com/media/GUAauViXEAAPGw2?format=jpg&name=4096x4096",
+//   },
 ];
 
 const AlternatingEvents = () => {
@@ -155,13 +168,15 @@ const styles = {
     lineHeight: "1.5",
   },
   imageContainer: {
-    flex: 1,
+    flex: 0.5,
     display: "flex",
     justifyContent: "center",
   },
   image: {
-    maxWidth: "100%",
-    borderRadius: "8px",
+    maxWidth: "400%",
+    borderRadius: "1px",
+    height: "auto",
+    display: "block",
   },
 };
 
