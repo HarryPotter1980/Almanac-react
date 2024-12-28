@@ -35,13 +35,13 @@ const centeredStyle = {
 
 
 
-function February() {
+function july() {
     return (
         <div>
           <Navbar />
           <section id="hero">
             <div className="hero-container" style={centeredStyle}>
-              <h1>February</h1>
+              <h1>Juvenile July</h1>
             </div>
           </section>
           <main id="main">
@@ -51,7 +51,8 @@ function February() {
                   
                   <p>
                     <br />
-                    From greeting the year with a launch to sending January off with beautiful celestial showers and passes, this month truly was a cosmic beginning of 2024. 
+                   in progress
+
                   </p>
                   <br />
                 </div>
@@ -68,29 +69,41 @@ function February() {
     );
   }
 
-export default February;
+export default july;
   
 
 
 const events = [
   {
-    title: "XPoSAT, launched by ISRO",
-    date: "01 January 2024",
-    description: "On January 1st, 2024, PSLV-C58, in its 60th flight, successfully launched its first polarimetry mission, the XPoSAT, to study the polarisation of X-rays. The spacecraft carried two scientific payloads developed by the Raman Research Institute and ISRO. The primary payload POLIX is an X-ray polarimeter for astronomical observations in the 8-30 keV energy bands. It is the first payload in the medium X-ray energy band dedicated to polarimetry measurements. XSPECT is an X-ray spectroscopy and timing payload, which can provide fast timing and good spectroscopic resolution in soft X-rays. The lifespan of the mission is expected to be at least five years. The observatory was placed in a low Earth orbit of 500-700 km..",
-    image: "https://via.placeholder.com/300",
+    title: "Europe’s Ariane 6 was launched",
+    date: "9 July 2024",
+    description: "Operated by the French company Arianespace on the behalf of the European Space Association, the long awaited Ariane 6 was finally launched on the 9th of July. Ariane 6 was initially scheduled to debut in 2020, but global issues like Covid-19, Wars between Russia and Ukraine and other technical issues pushed the first liftoff of this rocket to 2024. The Ariane 6 is a replacement rocket after retirement of the Ariane 5, which itself performed 117 flights for over 3 decades. The Ariane 6 ‘will ensure our guaranteed, autonomous access to space, and all of the science, Earth observation, technology development and commercial possibilities that it entails,’ESA officials wrote in a preview of the debut launch.",
+    image: "https://media.gettyimages.com/id/170462856/photo/dog-working-comfortably-from-home.jpg?s=612x612&w=0&k=20&c=bkWU83XcvVdxQBvQmoqVNkM-zLZsGy4BZPWWQQqzMok=",
   },
   {
-    title: "Event Two",
-    date: " ",
-    description: "This is the description for event two. It has text on the right and an image on the left.",
-    image: "https://via.placeholder.com/300",
+    title: "Southern δ-Aquariid meteor shower 2024",
+    date: "12 July to 23 August 2024",
+    description: "The southern delta Aquariid meteor shower was visible from mid July to Late August. The meteor shower displayed around 20 meteors per hour at an average speed of roughly 40km/s. The meteors are fragments of passing comets. The source comet for this shower is still unknown, but comet 96P Machholz is the suspected source. Comet Machholz was discovered by Donald Machholz in 1986 and is around 6.4km across.",
+    image: "https://media.gettyimages.com/id/1361767161/photo/cat-meowing-yawning-laughing-with-rose-gold-pink-background.jpg?s=612x612&w=0&k=20&c=PkySFRjkcLgu7PzYOtFxWejJU8CuJkRByxdSUZ0OqTA=",
   },
   {
-    title: "Event Three",
-    date: " ",
-    description: "This is the description for event three. It has text on the left and an image on the right.",
-    image: "https://via.placeholder.com/300",
+    title: "Hubble captures the image of a spiralling galaxy",
+    date: "31 July 2024",
+    description: "From its vantage point in the low Earth orbit, the Hubble telescope captured a stunning picture of a spiral galaxy ‘NGC 3430’. This galaxy is approximately 100 million light years away in the constellation Leo Minor. The galaxy is a beautiful spiraling scene with bright blue spots indicating the formation of new stars all over it. NGC 3430 is not as dense as the Milky Way and is considered as a ‘regular’ spiral galaxy.",
+    image: "https://cdn.mos.cms.futurecdn.net/89ua9VkK9Q9Bj2ompBxdp3-1200-80.jpg",
   },
+//   {
+//     title: "India's Pushpak Achieves Autonomous Landing Milestone",
+//     date: "23 June 2024",
+//     description: "India has just completed a series of experiments to exhibit its own self-made homegrown technology, wherein its reusable space plane is named Pushpak. The last test carried out on June 23, 2024 in Karnataka, proved a challenging experience where Pushpak did its precise horizontal landing under stringent conditions of landing. This marked a move for India in its ultimate target of achieving the reusable launch vehicle by the end of this decade. Such technology will make future space missions cheaper by allowing rockets to be reused. The test was led by the Vikram Sarabhai Space Centre (VSSC) and involved releasing the 21-foot-long space plane from a Chinook helicopter at an altitude of 2.8 miles (4.5 km). Pushpak was intentionally released off-center from the runway to test its autonomous landing capabilities. The vehicle did maneuver itself, and in spite of very strong winds, landed accurately at the center of the runway. ISRO is working on taking this technology a little further ahead by sending the prototype into space for returns under autonomous control.",
+//     image: "https://cdn.mos.cms.futurecdn.net/ACASaTCVr957GFdrHCvLgg-1200-80.jpg",
+//   },
+//   {
+//     title: "Soyuz-2.1a Launch",
+//     date: "29th March 2024",
+//     description: "On March 29, 2024, Russia launched a Soyuz-2.1a rocket from Baikonur Cosmodrome, carrying several satellites into orbit as part of ongoing missions aimed at enhancing communications and Earth observation capabilities. The launch occurred at approximately 11:00 AM local time and successfully deployed multiple payloads into their designated orbits.",
+//     image: "https://pbs.twimg.com/media/GUAauViXEAAPGw2?format=jpg&name=4096x4096",
+//   },
 ];
 
 const AlternatingEvents = () => {
@@ -155,13 +168,15 @@ const styles = {
     lineHeight: "1.5",
   },
   imageContainer: {
-    flex: 1,
+    flex: 0.5,
     display: "flex",
     justifyContent: "center",
   },
   image: {
-    maxWidth: "100%",
-    borderRadius: "8px",
+    maxWidth: "400%",
+    borderRadius: "1px",
+    height: "auto",
+    display: "block",
   },
 };
 
