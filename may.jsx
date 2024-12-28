@@ -35,13 +35,13 @@ const centeredStyle = {
 
 
 
-function February() {
+function may() {
     return (
         <div>
           <Navbar />
           <section id="hero">
             <div className="hero-container" style={centeredStyle}>
-              <h1>February</h1>
+              <h1>Melodious May</h1>
             </div>
           </section>
           <main id="main">
@@ -51,7 +51,8 @@ function February() {
                   
                   <p>
                     <br />
-                    From greeting the year with a launch to sending January off with beautiful celestial showers and passes, this month truly was a cosmic beginning of 2024. 
+                   in progress
+
                   </p>
                   <br />
                 </div>
@@ -68,29 +69,41 @@ function February() {
     );
   }
 
-export default February;
+export default may;
   
 
 
 const events = [
   {
-    title: "XPoSAT, launched by ISRO",
-    date: "01 January 2024",
-    description: "On January 1st, 2024, PSLV-C58, in its 60th flight, successfully launched its first polarimetry mission, the XPoSAT, to study the polarisation of X-rays. The spacecraft carried two scientific payloads developed by the Raman Research Institute and ISRO. The primary payload POLIX is an X-ray polarimeter for astronomical observations in the 8-30 keV energy bands. It is the first payload in the medium X-ray energy band dedicated to polarimetry measurements. XSPECT is an X-ray spectroscopy and timing payload, which can provide fast timing and good spectroscopic resolution in soft X-rays. The lifespan of the mission is expected to be at least five years. The observatory was placed in a low Earth orbit of 500-700 km..",
-    image: "https://via.placeholder.com/300",
+    title: "Discovery of an Earth-sized planet",
+    // date: "??",
+    description: "Gliese 12b had been characterised as a possibly habitable exoplanet, which orbits a small and relatively cool red dwarf star that lies 40 light years from Earth in the direction of the constellation Pisces. The star is a miniature one, only 27% the size of the sun and 60% as hot. Gliese 12b stays within the habitable zone because of its orbital period; one rotation around its host star takes 12.8 days, with a diameter smaller than Earth's but substantially larger than Venus's, so its surface temperature would reach as high as 107°F (42°C) if it has no atmosphere. Masayuki Kuzuhara of the Astrobiology Centre and Akihiko Fukui of the University of Tokyo termed it the 'nearest, transiting, temperate, Earth-size world' so far discovered. Its atmosphere will be studied in the future for water and other life-supporting components.",
+    image: "https://media.cnn.com/api/v1/images/stellar/prod/gl12b-illustration-less-atmosphere-ac-copy.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp",
   },
   {
-    title: "Event Two",
-    date: " ",
-    description: "This is the description for event two. It has text on the right and an image on the left.",
-    image: "https://via.placeholder.com/300",
+    title: "'Largest mass migration' caused by a solar superstorm",
+    //date: "6 January 2024",
+    description: "A solar superstorm in May lit up the night sky with stunning auroras but caused problems for satellites in space. The storm made Earth's upper atmosphere thicker, which pulled satellites and debris lower by about 590 feet (180 meters) per day. To stay in orbit, thousands of satellites had to fire their thrusters at the same time to move back up. This sudden movement made it harder for systems to avoid collisions because they couldn’t track the changing paths quickly enough, according to a paper on arXiv.",
+    image: "https://cdn.mos.cms.futurecdn.net/qcvGQExVtJBjADkSv5MjkT-650-80.jpg.webp",
   },
   {
-    title: "Event Three",
-    date: " ",
-    description: "This is the description for event three. It has text on the left and an image on the right.",
-    image: "https://via.placeholder.com/300",
+    title: "Launch of Chang’e 6 Mission",
+    date: "3 May 2024",
+    description: "Chang'e 6 was the sixth robotic mission to explore the Moon, launched by the China National Space Administration (CNSA). It was also China's second mission to bring back lunar samples. The mission is named after Chang'e, the Chinese moon goddess. Unlike previous missions, Chang'e 6 collected samples from the far side of the Moon, a region that had never been explored this way before.The mission began on May 3, 2024, when the spacecraft was launched from the Wenchang Space Launch Site on Hainan Island. On June 1, 2024, its lander and rover successfully landed on the far side of the moon. The lander used a robotic scoop and drill to collect 1,935.3 grams of lunar soil and rock. These samples were then placed in an ascender module, which launched back into lunar orbit on June 3, 2024. Once in orbit, the ascender docked with an orbiter module on June 6, 2024. The samples were transferred to a re-entry capsule, which returned to Earth. The lander and rover also carried out scientific studies while on the moon. The mission lasted 53 days in total, ending on June 25, 2024, when the capsule carrying the lunar samples landed safely in Inner Mongolia. ",
+    image: "https://en.wikipedia.org/wiki/File:Chang%27e_6_lander_and_ascender.jpg",
   },
+//   {
+//     title: "ISRO’s RLV Landing Experiment",
+//     date: "22nd March 2024",
+//     description: "ISRO has successfully completed the RLV LEX-02 landing experiment on March 22, 2024, at the Aeronautical Test Range in Chitradurga, Karnataka. This is an important milestone in the technology of reusable launch vehicle technology, wherein the autonomous landing of the RLV was carried out under challenging conditions. In this experiment, the winged vehicle, Pushpak, was airlifted by an Indian Air Force Chinook helicopter and released from an altitude of 4.5 km. After release, Pushpak autonomously navigated toward the runway, making necessary corrections to its trajectory before landing precisely and coming to a stop using its brake parachute and landing gear systems.",
+//     image: "https://i.pinimg.com/736x/ba/92/7f/ba927ff34cd961ce2c184d47e8ead9f6.jpg",
+//   },
+//   {
+//     title: "Soyuz-2.1a Launch",
+//     date: "29th March 2024",
+//     description: "On March 29, 2024, Russia launched a Soyuz-2.1a rocket from Baikonur Cosmodrome, carrying several satellites into orbit as part of ongoing missions aimed at enhancing communications and Earth observation capabilities. The launch occurred at approximately 11:00 AM local time and successfully deployed multiple payloads into their designated orbits.",
+//     image: "https://pbs.twimg.com/media/GUAauViXEAAPGw2?format=jpg&name=4096x4096",
+//   },
 ];
 
 const AlternatingEvents = () => {
@@ -155,14 +168,15 @@ const styles = {
     lineHeight: "1.5",
   },
   imageContainer: {
-    flex: 1,
+    flex: 0.5,
     display: "flex",
     justifyContent: "center",
   },
   image: {
-    maxWidth: "100%",
-    borderRadius: "8px",
+    maxWidth: "400%",
+    borderRadius: "1px",
+    height: "auto",
+    display: "block",
   },
 };
 
- 
