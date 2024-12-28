@@ -35,13 +35,13 @@ const centeredStyle = {
 
 
 
-function October() {
+function october() {
     return (
         <div>
           <Navbar />
           <section id="hero">
             <div className="hero-container" style={centeredStyle}>
-              <h1>February</h1>
+              <h1>Optimistic October</h1>
             </div>
           </section>
           <main id="main">
@@ -51,7 +51,7 @@ function October() {
                   
                   <p>
                     <br />
-                    From greeting the year with a launch to sending January off with beautiful celestial showers and passes, this month truly was a cosmic beginning of 2024. 
+                   in process
                   </p>
                   <br />
                 </div>
@@ -68,29 +68,41 @@ function October() {
     );
   }
 
-export default October;
+export default october;
   
 
 
 const events = [
   {
-    title: "XPoSAT, launched by ISRO",
-    date: "01 January 2024",
-    description: "On January 1st, 2024, PSLV-C58, in its 60th flight, successfully launched its first polarimetry mission, the XPoSAT, to study the polarisation of X-rays. The spacecraft carried two scientific payloads developed by the Raman Research Institute and ISRO. The primary payload POLIX is an X-ray polarimeter for astronomical observations in the 8-30 keV energy bands. It is the first payload in the medium X-ray energy band dedicated to polarimetry measurements. XSPECT is an X-ray spectroscopy and timing payload, which can provide fast timing and good spectroscopic resolution in soft X-rays. The lifespan of the mission is expected to be at least five years. The observatory was placed in a low Earth orbit of 500-700 km..",
-    image: "https://via.placeholder.com/300",
+    title: "NASA’s Europa Clipper Sails Toward Ocean Moon of Jupiter",
+    date: "14 October 2024",
+    description: "NASA’s Europa Clipper has embarked on its long voyage to Jupiter, where it will investigate Europa, a moon with an enormous subsurface ocean that may have conditions to support life. . EDT Monday aboard a SpaceX Falcon Heavy rocket from Launch Pad 39A at NASA’s Kennedy Space Center in Florida. The largest spacecraft NASA ever built for a mission headed to another planet, Europa Clipper, also is the first NASA mission dedicated to studying an ocean world beyond Earth. The spacecraft will travel 1.8 billion miles (2.9 billion kilometers) on a trajectory that will leverage the power of gravity assists, first to Mars in four months and then back to Earth for another gravity assist flyby in 2026. After it begins orbiting Jupiter in April 2030, the spacecraft will fly past Europa 49 times. By exploring the unknown, Europa Clipper will help us better understand whether there is the potential for life not just within our solar system, but among the billions of moons and planets beyond our Sun.",
+    image: "https://www.nasa.gov/wp-content/uploads/2024/03/crew8launch030324.jpg?resize=2000,1333",
   },
   {
-    title: "Event Two",
-    date: " ",
-    description: "This is the description for event two. It has text on the right and an image on the left.",
-    image: "https://via.placeholder.com/300",
+    title: "Hera Asteroid Mission!",
+    date: "7 October 2024",
+    description: "ESA’s Hera mission lifted off on a SpaceX Falcon 9 from Cape Canaveral Space Force Station in Florida, USA, on 7 October at 10:52 local time (16:52 CEST, 14:52 UTC). Hera is ESA’s first planetary defence mission. It will fly to a unique target among the 1.3 million asteroids in our Solar System – the only body to have had its orbit shifted by human action – to solve lingering unknowns associated with its deflection. Hera will carry out the first detailed survey of a ‘binary’ – or double-body – asteroid, 65803 Didymos, which is orbited by a smaller body, Dimorphous. Hera’s main focus will be Dimorphic, whose orbit around the main body was previously altered by NASA’s kinetic-impacting DART spacecraft. By sharpening scientific understanding of this ‘kinetic impact’ technique of asteroid deflection, Hera should turn the experiment into a well-understood and repeatable technique for protecting Earth from an asteroid on a collision course.",
+    image: "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2024/10/hera_asteroid_mission_launches_to_the_sky_on_7_october_20246/26347787-2-eng-GB/Hera_asteroid_mission_launches_to_the_sky_on_7_October_2024_pillars.jpg",
   },
-  {
-    title: "Event Three",
-    date: " ",
-    description: "This is the description for event three. It has text on the left and an image on the right.",
-    image: "https://via.placeholder.com/300",
-  },
+  // {
+  //   title: "March Equinox",
+  //   date: "20th March 2024",
+  //   description: "The March equinox—aka the vernal equinox—marks the sun’s crossing above Earth’s equator, moving from south to north. Earth’s tilt on its axis is what causes this northward shift of the sun’s path across our sky at this time of year. Earth’s tilt is now bringing spring and summer to the Northern Hemisphere. At the same time, the March equinox marks the beginning of autumn—and a shift toward winter—in the Southern Hemisphere..",
+  //   image: "https://c.tadst.com/gfx/750w/march-equinox-dark.png?1",
+  // },
+  // {
+  //   title: "ISRO’s RLV Landing Experiment",
+  //   date: "22nd March 2024",
+  //   description: "ISRO has successfully completed the RLV LEX-02 landing experiment on March 22, 2024, at the Aeronautical Test Range in Chitradurga, Karnataka. This is an important milestone in the technology of reusable launch vehicle technology, wherein the autonomous landing of the RLV was carried out under challenging conditions. In this experiment, the winged vehicle, Pushpak, was airlifted by an Indian Air Force Chinook helicopter and released from an altitude of 4.5 km. After release, Pushpak autonomously navigated toward the runway, making necessary corrections to its trajectory before landing precisely and coming to a stop using its brake parachute and landing gear systems.",
+  //   image: "https://www.isro.gov.in/media_isro/image/RLV/RLVLEX026.jpg",
+  // },
+  // {
+  //   title: "Soyuz-2.1a Launch",
+  //   date: "29th March 2024",
+  //   description: "On March 29, 2024, Russia launched a Soyuz-2.1a rocket from Baikonur Cosmodrome, carrying several satellites into orbit as part of ongoing missions aimed at enhancing communications and Earth observation capabilities. The launch occurred at approximately 11:00 AM local time and successfully deployed multiple payloads into their designated orbits.",
+  //   image: "https://pbs.twimg.com/media/GUAauViXEAAPGw2?format=jpg&name=4096x4096",
+  // },
 ];
 
 const AlternatingEvents = () => {
@@ -155,13 +167,15 @@ const styles = {
     lineHeight: "1.5",
   },
   imageContainer: {
-    flex: 1,
+    flex: 0.5,
     display: "flex",
     justifyContent: "center",
   },
   image: {
-    maxWidth: "100%",
-    borderRadius: "8px",
+    maxWidth: "400%",
+    borderRadius: "1px",
+    height: "auto",
+    display: "block",
   },
 };
 
