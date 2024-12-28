@@ -35,13 +35,13 @@ const centeredStyle = {
 
 
 
-function December() {
+function nov() {
     return (
         <div>
           <Navbar />
           <section id="hero">
             <div className="hero-container" style={centeredStyle}>
-              <h1>February</h1>
+              <h1>Dynamic December</h1>
             </div>
           </section>
           <main id="main">
@@ -51,7 +51,8 @@ function December() {
                   
                   <p>
                     <br />
-                    From greeting the year with a launch to sending January off with beautiful celestial showers and passes, this month truly was a cosmic beginning of 2024. 
+                    {/* March 2024 witnessed many space and astronomical events. ISRO's RLV Landing Experiment proved reusable technology by landing autonomously with Pushpak. SpaceX Crew-8 carried humans to the ISS. The KAIROS rocket caught ablaze just above Japan. Russia's Soyuz 2.1a launched many satellites successfully; there was a transition season on the March Equinox. */}
+                    in process
                   </p>
                   <br />
                 </div>
@@ -68,29 +69,41 @@ function December() {
     );
   }
 
-export default December;
+export default nov;
   
 
 
 const events = [
-  {
-    title: "XPoSAT, launched by ISRO",
-    date: "01 January 2024",
-    description: "On January 1st, 2024, PSLV-C58, in its 60th flight, successfully launched its first polarimetry mission, the XPoSAT, to study the polarisation of X-rays. The spacecraft carried two scientific payloads developed by the Raman Research Institute and ISRO. The primary payload POLIX is an X-ray polarimeter for astronomical observations in the 8-30 keV energy bands. It is the first payload in the medium X-ray energy band dedicated to polarimetry measurements. XSPECT is an X-ray spectroscopy and timing payload, which can provide fast timing and good spectroscopic resolution in soft X-rays. The lifespan of the mission is expected to be at least five years. The observatory was placed in a low Earth orbit of 500-700 km..",
-    image: "https://via.placeholder.com/300",
-  },
-  {
-    title: "Event Two",
-    date: " ",
-    description: "This is the description for event two. It has text on the right and an image on the left.",
-    image: "https://via.placeholder.com/300",
-  },
-  {
-    title: "Event Three",
-    date: " ",
-    description: "This is the description for event three. It has text on the left and an image on the right.",
-    image: "https://via.placeholder.com/300",
-  },
+  // {
+  //   title: "SpaceX Crew-8 Launch",
+  //   date: "3rd March 2024",
+  //   description: "On March 3, 2024, SpaceX launched its Crew-8 mission from Kennedy Space Centre in Florida. The Falcon 9 rocket launched at 10:53 PM EST, taking four astronauts, Matthew Dominick, Michael Barratt, and Jeanette Epps from NASA, together with Alexander Grebenkin from Russia. This is one of the missions that are part of NASA's Commercial Crew Program, indicating the cooperation of nations in their space exploration. The Crew Dragon spacecraft, called Endeavour, docked at the ISS on 5 March, from where they will spend the next six months doing more than 200 cool science experiments in microgravity. That is one huge win for SpaceX and human space travel!.",
+  //   image: "https://www.nasa.gov/wp-content/uploads/2024/03/crew8launch030324.jpg?resize=2000,1333",
+  // },
+  // {
+  //   title: "KAIROS Launch Failure",
+  //   date: "13th March 2024",
+  //   description: "March 13, 2024, saw another reverse for Japan. Just some five seconds into liftoff from the Kii Space Port, KAIROS, its latest launch rocket meant to boost a small satellite to orbiting altitude, went down and exploded in flight with failure due to an apparently misdirected trajectory. Though disappointing for the engineers and technicians involved in the KAIROS program, this incident is a reminder of the risks associated with space exploration. There are already investigations underway to determine what went wrong and how future launches can be improved. Despite this failure, Japan is committed to furthering its space capabilities through innovative technologies and partnerships within the commercial sector. The KAIROS program was designed to enhance Japan's competitiveness in the burgeoning small satellite market, which has seen increasing demand for rapid deployment capabilities.",
+  //   image: "https://www.reuters.com/resizer/v2/AEJ6OKT6JNJIXA3T67O7QTNVW4.jpg?auth=fbb1e0434ec4136d2323e6fda893c5b9c3d4de0f32b64b180a1f491ca235fe99&width=1200&quality=80",
+  // },
+  // {
+  //   title: "March Equinox",
+  //   date: "20th March 2024",
+  //   description: "The March equinox—aka the vernal equinox—marks the sun’s crossing above Earth’s equator, moving from south to north. Earth’s tilt on its axis is what causes this northward shift of the sun’s path across our sky at this time of year. Earth’s tilt is now bringing spring and summer to the Northern Hemisphere. At the same time, the March equinox marks the beginning of autumn—and a shift toward winter—in the Southern Hemisphere..",
+  //   image: "https://c.tadst.com/gfx/750w/march-equinox-dark.png?1",
+  // },
+  // {
+  //   title: "ISRO’s RLV Landing Experiment",
+  //   date: "22nd March 2024",
+  //   description: "ISRO has successfully completed the RLV LEX-02 landing experiment on March 22, 2024, at the Aeronautical Test Range in Chitradurga, Karnataka. This is an important milestone in the technology of reusable launch vehicle technology, wherein the autonomous landing of the RLV was carried out under challenging conditions. In this experiment, the winged vehicle, Pushpak, was airlifted by an Indian Air Force Chinook helicopter and released from an altitude of 4.5 km. After release, Pushpak autonomously navigated toward the runway, making necessary corrections to its trajectory before landing precisely and coming to a stop using its brake parachute and landing gear systems.",
+  //   image: "https://www.isro.gov.in/media_isro/image/RLV/RLVLEX026.jpg",
+  // },
+  // {
+  //   title: "Soyuz-2.1a Launch",
+  //   date: "29th March 2024",
+  //   description: "On March 29, 2024, Russia launched a Soyuz-2.1a rocket from Baikonur Cosmodrome, carrying several satellites into orbit as part of ongoing missions aimed at enhancing communications and Earth observation capabilities. The launch occurred at approximately 11:00 AM local time and successfully deployed multiple payloads into their designated orbits.",
+  //   image: "https://pbs.twimg.com/media/GUAauViXEAAPGw2?format=jpg&name=4096x4096",
+  // },
 ];
 
 const AlternatingEvents = () => {
@@ -155,13 +168,15 @@ const styles = {
     lineHeight: "1.5",
   },
   imageContainer: {
-    flex: 1,
+    flex: 0.5,
     display: "flex",
     justifyContent: "center",
   },
   image: {
-    maxWidth: "100%",
-    borderRadius: "8px",
+    maxWidth: "400%",
+    borderRadius: "1px",
+    height: "auto",
+    display: "block",
   },
 };
 
