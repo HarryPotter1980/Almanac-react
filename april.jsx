@@ -35,13 +35,13 @@ const centeredStyle = {
 
 
 
-function April() {
+function april() {
     return (
         <div>
           <Navbar />
           <section id="hero">
             <div className="hero-container" style={centeredStyle}>
-              <h1>February</h1>
+              <h1>Astonishing April</h1>
             </div>
           </section>
           <main id="main">
@@ -51,7 +51,8 @@ function April() {
                   
                   <p>
                     <br />
-                    From greeting the year with a launch to sending January off with beautiful celestial showers and passes, this month truly was a cosmic beginning of 2024. 
+                   in progress
+
                   </p>
                   <br />
                 </div>
@@ -68,29 +69,41 @@ function April() {
     );
   }
 
-export default April;
+export default april;
   
 
 
 const events = [
   {
-    title: "XPoSAT, launched by ISRO",
-    date: "01 January 2024",
-    description: "On January 1st, 2024, PSLV-C58, in its 60th flight, successfully launched its first polarimetry mission, the XPoSAT, to study the polarisation of X-rays. The spacecraft carried two scientific payloads developed by the Raman Research Institute and ISRO. The primary payload POLIX is an X-ray polarimeter for astronomical observations in the 8-30 keV energy bands. It is the first payload in the medium X-ray energy band dedicated to polarimetry measurements. XSPECT is an X-ray spectroscopy and timing payload, which can provide fast timing and good spectroscopic resolution in soft X-rays. The lifespan of the mission is expected to be at least five years. The observatory was placed in a low Earth orbit of 500-700 km..",
-    image: "https://via.placeholder.com/300",
+    title: "NASA's APEP Mission",
+    date: "8 April 2024",
+    description: "On April 8, 2024, the Atmospheric Perturbations around Eclipse Path (APEP)mission was conducted by NASA during the total solar eclipse. This involved launching three sounding rockets from the Wallops Flight Facility in Virginia to study the ionosphere’s response to the eclipse. To observe change in electric and magnetic fields, density, and temperature , rockets were launched sequentially before, during and after the eclipse peak, at altitude of approximately 410-413 km.The data gathered helps refine models predicting ionospheric disturbances, which can affect communication and navigation systems. This mission follows earlier tests conducted during the 2023 annular solar eclipse to explore similar atmospheric phenomena.",
+    image: "https://science.nasa.gov/wp-content/uploads/2024/03/img-8521-group1.jpg?w=1536&format=webp",
   },
   {
-    title: "Event Two",
-    date: " ",
-    description: "This is the description for event two. It has text on the right and an image on the left.",
-    image: "https://via.placeholder.com/300",
+    title: "Rocket Lab's EElectron Launch",
+    date: "23 April 2024",
+    description: "On Apr 23, 2024 Rocket Lab launched an Electron rocket from New Zealand carrying NASA’s Advanced Composite Solar Sail System(ACS3) and South Korea’s NEONSAT - 1 satellite. NEONSAT-1, an Earth-Observation satellite developed by KAIST, was deployed into a 520 km orbit to support national safety and disaster monitoring. NASA's ACS3, a CubeSat with an 80-square-meter solar sail, was placed in a higher 1,000-kilometer orbit to test sunlight-based propulsion and lightweight composite booms for future space missions. This demonstration seeks to advance solar sail technologies for applications in asteroid reconnaissance, solar observations, and space weather monitoring.",
+    image: "https://i0.wp.com/spacenews.com/wp-content/uploads/2024/04/electron-bts.jpg",
   },
   {
-    title: "Event Three",
-    date: " ",
-    description: "This is the description for event three. It has text on the left and an image on the right.",
-    image: "https://via.placeholder.com/300",
+    title: "World's Highest Observatory: University of Tokyo's TAO Begins Unveiling Cosmic Mysteries!",
+    date: "30 April 2024",
+    description: "On April 30, 2024, The University of Tokyo Atacama Observatory (TAO, the world’s highest astronomical site, officially began its operations. It is located at the top of Cerro Chajnantor in Chile at an altitude of 5,640 meters(18,500 feet).Equipped with 6.5-meter optical- infrared telescope, this state of the art facility, aims to study galaxy evolution and exoplanetary systems under optimal observational conditions afforded by the region’s sparse atmosphere and low moisture levels.TAO houses two advanced instruments: SWIMS, to analyze early galaxies and cosmic dust formation, and MIMIZUKU, for investigating primordial star-forming disks. The project, first envisioned 26 years ago, overcame technical, political, and cultural challenges, incorporating indigenous and governmental input to ensure ethical and safe construction. It represents a leap forward for infrared astronomy, complementing other ground- and space-based observatories. ",
+    image: "https://cdn.mos.cms.futurecdn.net/SiwjQwWZGPV5EVX6NjzaCn-650-80.jpg.webp",
   },
+  {
+    title: "Lyrid Meteor Shower",
+    date: "21-22 April 2024",
+    description: "The Lyrid Meteor Shower in 2024 peaked on the night of April 21-22. The Northern Hemisphere had the best opportunities to view these meteor showers.Originating from the debris of Comet C/1861 G1 Thatcher, it is well-known for its bright meteors and occasional fireballs. Lyrids have long been one of the oldest recorded meteor showers.Under optimal conditions, observers saw about 10-20 meteors per hour at the peak. The best time to watch was after midnight, with meteors radiating from the constellation Lyra, near the bright star Vega, though they appeared across the sky.",
+    image: "https://media.istockphoto.com/id/964611070/photo/funny-burrowing-owl-athene-cunicularia.jpg?s=1024x1024&w=is&k=20&c=j_cAWMExBpfMD88Iy8RodXCHFeIjnvb1fkh8V5mJzU0=",
+  },
+//   {
+//     title: "Soyuz-2.1a Launch",
+//     date: "29th March 2024",
+//     description: "On March 29, 2024, Russia launched a Soyuz-2.1a rocket from Baikonur Cosmodrome, carrying several satellites into orbit as part of ongoing missions aimed at enhancing communications and Earth observation capabilities. The launch occurred at approximately 11:00 AM local time and successfully deployed multiple payloads into their designated orbits.",
+//     image: "https://pbs.twimg.com/media/GUAauViXEAAPGw2?format=jpg&name=4096x4096",
+//   },
 ];
 
 const AlternatingEvents = () => {
@@ -155,13 +168,15 @@ const styles = {
     lineHeight: "1.5",
   },
   imageContainer: {
-    flex: 1,
+    flex: 0.5,
     display: "flex",
     justifyContent: "center",
   },
   image: {
-    maxWidth: "100%",
-    borderRadius: "8px",
+    maxWidth: "400%",
+    borderRadius: "1px",
+    height: "auto",
+    display: "block",
   },
 };
 
