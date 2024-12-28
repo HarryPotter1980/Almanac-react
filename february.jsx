@@ -41,7 +41,7 @@ function February() {
           <Navbar />
           <section id="hero">
             <div className="hero-container" style={centeredStyle}>
-              <h1>February</h1>
+              <h1>Fascinating February</h1>
             </div>
           </section>
           <main id="main">
